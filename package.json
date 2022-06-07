@@ -1,0 +1,34 @@
+{
+  "name": "sample-discord-bot",
+  "version": "1.0.0",
+  "description": "Sample Discord Bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "debug": "node --inspect dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TORQDL/sample-discord-bot.git"
+  },
+  "author": "ty@torqdl.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TORQDL/sample-discord-bot/issues"
+  },
+  "homepage": "https://github.com/TORQDL/sample-discord-bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.33.4",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40",
+    "@types/ws": "^8.5.3",
+    "typescript": "^4.7.3"
+  }
+}
