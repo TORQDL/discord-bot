@@ -9,11 +9,22 @@
     "debug": "node --inspect dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": {
+    "name": "Ty Baldwin",
+    "email": "ty@torqdl.com",
+    "url": "https://www.torqdl.com/"
+  },
+  "contributors": [
+    {
+      "name": "Ty Baldwin",
+      "email": "ty@torqdl.com",
+      "url": "https://www.torqdl.com/"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TORQDL/sample-discord-bot.git"
   },
-  "author": "ty@torqdl.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TORQDL/sample-discord-bot/issues"
@@ -29,6 +40,8 @@
   "devDependencies": {
     "@types/node": "^17.0.40",
     "@types/ws": "^8.5.3",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "eslint": "^7.27.0",
+    "eslint-config-athom": "^2.1.0"
   }
 }
