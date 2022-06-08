@@ -1,0 +1,48 @@
+{
+  "name": "torq-discord-bot",
+  "version": "1.0.0",
+  "description": "TORQ Digital Labs Discord Bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "debug": "node --inspect dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "Ty Baldwin",
+    "email": "ty@torqdl.com",
+    "url": "https://www.torqdl.com/"
+  },
+  "contributors": [
+    {
+      "name": "Ty Baldwin",
+      "email": "ty@torqdl.com",
+      "url": "https://www.torqdl.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TORQDL/discord-bot.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TORQDL/discord-bot/issues"
+  },
+  "homepage": "https://github.com/TORQDL/discord-bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.33.4",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40",
+    "@types/ws": "^8.5.3",
+    "eslint": "^7.27.0",
+    "eslint-config-athom": "^2.1.0",
+    "typescript": "^4.7.3"
+  }
+}
