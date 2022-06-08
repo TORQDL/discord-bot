@@ -39,6 +39,14 @@ These commands can be issued by users on the server, and if the user is a member
 
 ## Running the TORQ Discord Bot
 
+Before you run the TORQ Discord Bot's Docker container, you'll need to set up the bot inside of Discord at the [Discord Developer Portal](https://discord.com/developers/).
+
+### Discord Setup
+
+TODO: Add instructions for setting up the Discord bot.
+
+### Docker Setup
+
 If you haven't installed Docker yet, install it by running:
 
 ```bash
@@ -115,7 +123,7 @@ secrets:
 
 ## Configuration
 
-
+TODO: Add instructions for using the config.json file, or using the environment variables.
 
 ## Updating
 
