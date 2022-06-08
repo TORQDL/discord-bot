@@ -9,10 +9,10 @@ module.exports = {
     .addUserOption(option => option.setName('target').setDescription('The member to kick')),
   async execute(interaction) {
     const user = interaction.options.getUser('target');
-    if (user) {
-      return interaction.reply({ content: `You wanted to kick: ${user.username}`, ephemeral: true });
+    if (!user) {
+      return interaction.reply({ content: 'You did not specify who you wanted to kick.', ephemeral: true });
     } else {
-      return interaction.reply({ content: `You did not specify who you wanted to kick.`, ephemeral: true });
+      return interaction.reply({ content: `You wanted to kick: ${user.username}`, ephemeral: true });
     }
   },
 };
