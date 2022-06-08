@@ -1,4 +1,4 @@
-# discord-bot
+# TORQ Discord Bot
 
 [![Build & Publish Docker Image to Docker Hub](https://github.com/TORQDL/discord-bot/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/TORQDL/discord-bot/actions/workflows/deploy.yml)
 [![Lint](https://github.com/TORQDL/discord-bot/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/TORQDL/discord-bot/actions/workflows/lint.yml)
