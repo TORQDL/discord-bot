@@ -23,7 +23,7 @@ rest.get(Routes.applicationGuildCommands(clientId, guildId))
     const promises = [];
     for (const command of data) {
       const deleteUrl = `${Routes.applicationGuildCommands(clientId, guildId)}/${command.id}`;
-      console.log('Deleting URL: ' + deleteUrl);
+      console.log('Deleting URL: %s', deleteUrl);
       promises.push(rest.delete(deleteUrl));
     }
     return Promise.all(promises);
