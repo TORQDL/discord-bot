@@ -26,14 +26,14 @@ These commands can be issued by users on the server, and if the user is a member
 
 | Command | Option | Example | Description |
 | - | - | - | - |
-| `/avatar` | `target` | `/avatar`&nbsp;`target:@Tyrelius#0001` | Get the avatar URL of the selected user, or your own avatar. |
+| `/avatar` | `target` | `/avatar target:@Tyrelius#0001` | Get the avatar URL of the selected user, or your own avatar. |
 | `/beep` | - | `/beep` | Beep! |
-| `/kick` | `target` | `/kick`&nbsp;`target:@Tyrelius#0001` | Select a member and kick them (but not really). |
-| `/options`&#8209;`info` | `input` | `/options`&#8209;`info`&nbsp;`input:This`&nbsp;`is`&nbsp;`an`&nbsp;`example.` | Information about the options provided. |
+| `/kick` | `target` | `/kick target:@Tyrelius#0001` | Select a member and kick them (but not really). |
+| `/options-info` | `input` | `/options-info input:This is an example.` | Information about the options provided. |
 | `/ping` | - | `/ping` | Replies with Pong! |
-| `/prune` | `amount` | `/prune`&nbsp;`amount:10` | Prune up to 99 messages. |
+| `/prune` | `amount` | `/prune amount:10` | Prune up to 99 messages. |
 | `/server` | - | `/server` | Display info about this server. |
-| `/user`&#8209;`info` | - | `/user`&#8209;`info` | Display info about yourself. |
+| `/user-info` | - | `/user-info` | Display info about yourself. |
 
 <!-- > 💡 If you change `WG_PORT`, make sure to also change the exposed port. -->
 
