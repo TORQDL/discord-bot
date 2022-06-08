@@ -18,6 +18,15 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '9' }).setToken(token);
 
-rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
-    .then(() => console.log('Successfully registered application commands.'))
+rest.get(Routes.applicationGuildCommands(clientId, guildId))
+    .then(data => {
+        const promises = [];
+        for (const command of data) {
+            const deleteUrl = `${Routes.applicationGuildCommands(clientId, guildId)}/${command.id}`;
+            console.log('Deleting URL: ' + deleteUrl);
+            promises.push(rest.delete(deleteUrl));
+        }
+        return Promise.all(promises);
+    })
+    .then(() => console.log('Successfully deleted application commands.'))
     .catch(console.error);

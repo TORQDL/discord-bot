@@ -18,6 +18,12 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: '9' }).setToken(token);
 
-rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
-    .then(() => console.log('Successfully registered application commands.'))
+rest.get(Routes.applicationGuildCommands(clientId, guildId))
+    .then(data => {
+        const promises = [];
+        for (const command of data) {
+            console.log('Command: %s\n%O', command.name, command);
+        }
+        return Promise.all(promises);
+    })
     .catch(console.error);
