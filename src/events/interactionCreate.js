@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Intents } = require('discord.js');
 
 module.exports = {
-	name: 'interactionCreate',
-	execute(interaction) {
-		// console.log(`${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`);
+    name: 'interactionCreate',
+    execute(interaction) {
+        // console.log(`${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`);
 
         const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -33,5 +33,5 @@ module.exports = {
             console.error(error);
             return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
         }
-	},
+    },
 };

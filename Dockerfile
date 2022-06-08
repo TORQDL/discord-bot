@@ -19,4 +19,5 @@ COPY src $APP/src
 COPY package.json $APP
 COPY tsconfig.json $APP
 WORKDIR $APP
-RUN npm run buildCMD [ "node", "dist/index.js" ]
+RUN npm run build
+CMD [ "node", "dist/index.js" ]
